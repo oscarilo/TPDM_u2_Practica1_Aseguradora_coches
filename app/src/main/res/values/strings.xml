@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TPDM_U2_Practica2_Oscar_Ibañez_Loreto_Aseguradora_Coches</string>
+    <string-array name="seguros">
+        <item>Ninguno</item>
+        <item>Tipo 1: Seguro para Vivienda.</item>
+        <item>Tipo 2: Seguro vehícular</item>
+        <item>Tipo 3: Seguro medico</item>
+    </string-array>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Datos del propietario:"
+            android:textColor="@color/colorNegro"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/habilitar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Editar Nombre y Domicilio" />
+
+        <EditText
+            android:id="@+id/telefono"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:enabled="false"
+            android:hint="Télefono"
+            android:inputType="number"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/nombre"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:fontFamily="@font/regular"
+            android:hint="Nombre"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/domicilio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:enabled="false"
+            android:hint="Domicilio"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/fecha"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/regular"
+            android:hint="Fecha"
+            android:inputType="date"
+            android:textSize="20dp" />
+
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Datos del seguro:"
+            android:textColor="@color/colorNegro" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textSize="15dp"
+            android:text="Tipo de seguro:"
+            android:textColor="@color/colorNegro" />
+
+        <Spinner
+            android:id="@+id/tiposeguro"
+
+            android:layout_width="match_parent"
+            android:entries="@array/seguros"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCancelar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estructuraboton"
+                android:fontFamily="@font/regular"
+                android:textAllCaps="false"
+                android:ems="9"
+                android:layout_marginRight="10dp"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textAllCaps="false"
+                android:background="@drawable/estructuraboton"
+                android:ems="9"
+                android:text="Guardar/Asegurar" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
